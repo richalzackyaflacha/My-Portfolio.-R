@@ -1,0 +1,892 @@
+html { scroll-behavior: smooth; }
+
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+/* Track */
+::-webkit-scrollbar-track {
+  	box-shadow: inset 0 0 5px grey; 
+  	border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  	background: #4E3620; 
+  	border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover { background: #897853; }
+
+
+body {
+	margin: 0;
+	font-family: arial;
+	background-color: #F8F4E1;
+}
+
+
+/*-------------------------------------------------- Navbar --------------------------------------------------*/
+/* Header navbar */
+.navbar {
+	padding: 5px 30px;
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	width: 100%;
+	display: block;
+	transition: top 0.3s;
+	background-color: rgba(0, 0, 0, .3);
+	transition: all .5s;
+}
+/* Header navbar (scroll) */
+.HeadColor{
+	background-color: rgba(0, 0, 0, .9);
+}
+/* Navbar logo  */
+.logo-navbar{
+	font-family: Adobe Garamond Pro;
+	font-size: 30px;
+	font-weight: bold;
+	color: #897853;
+	text-shadow: .5px .5px .5px lightgrey;
+	cursor: default;
+}
+/* Menu navbar */
+.menu-navbar {
+	position: absolute;
+	top: 15px;
+	right: 90px;
+}
+/* Menu list */
+.menu-navbar a {
+	text-decoration: none;
+	color: grey;
+	padding: 0px 17px 0px 15px;
+	border-right: 1px solid grey;
+	transition: .4s;
+}
+.menu-navbar .menu-end {
+	border-right: none;
+}
+.menu-navbar a:hover, .menu-navbar .active{
+	color: white;
+}
+
+
+
+/* Mobile navbar */
+.mobile-nav {
+	width: 100%;
+	z-index: 10;
+	height: 50px;
+	background-color: black;
+	position: fixed;
+	display: none;
+}
+
+.sidepanel  {
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.logo-mobile, .logo-navbar2 {
+	position: absolute;
+	font-family: Adobe Garamond Pro;
+	font-size: 50px;
+	font-weight: bold;
+	color: #897853;
+	text-shadow: -.5px -.5px .5px lightgrey, 1px 1px 2px black;
+	cursor: default;
+ 	top: 0px;
+ 	left: 20px;
+}
+
+.logo-mobile {
+	top: 10px;
+}
+
+.sidepanel a {
+	padding: 15px 0px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+	text-align: center;
+}
+
+.sidepanel a:hover, .sidepanel  .active2 {
+  	color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 36px;
+}
+
+.openbtn {
+	font-size: 30px;
+	cursor: pointer;
+	background-color: transparent;
+	color: white;
+	border: none;
+	position: absolute;
+	top: 7px;
+	right: 20px;
+}
+
+.openbtn:hover {
+   	transform: scale(1.05);
+}
+
+
+/*-------------------------------------------------- Background --------------------------------------------------*/
+/* Background image home */
+.img-home {
+	background-image: url(image/bg.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 660px;
+	-webkit-filter: brightness(.4);
+	filter: brightness(.4);
+}
+
+
+/*-------------------------------------------------- Home --------------------------------------------------*/
+/* Image Profile */
+.image-p img{
+	width: 550px;
+	height: 550px;
+	position: absolute;
+	top: 108px;
+	left: 120px;
+	filter: drop-shadow(2px 2px 5px black);
+}
+
+/* Caption profile */
+.caption-p {
+	position: absolute;
+	top: 32%;
+	right: 10%;
+	cursor: default;
+}
+.caption-p p {
+	color: white;
+	font-size: 20px;
+	margin-bottom: -20px;
+}
+/* Profile name */
+.caption-p h1 {
+	margin-top: 30px;
+	font-size: 50px;
+	color: #897853;
+	text-shadow: 1px 1px 5px black;
+}
+.caption-p h4 {
+	font-size: 25px;
+	color: #897853;
+	margin-top: -20px;
+	text-shadow: 1px 1px 5px black;
+}
+
+/* Button to portfolio */
+.caption-p button {
+	font-size: 18px;
+	padding: 10px 50px;
+	background-image: radial-gradient(#897853, #4E3620);
+	border-radius: 20px;
+	color: white;
+	text-shadow: 1px 1px 2px black;
+	cursor: pointer;
+	transition: .5s;
+}
+.caption-p button:hover, .button2 button:hover{ 
+	transform: scale(1.04); 
+	box-shadow: 0px 0px 10px grey;
+}
+.caption-p button:active { 
+	transform: translateY(4px);
+	background-image: radial-gradient(grey, black);
+}
+/* Copyright home */
+.copyright-h {
+	position: absolute;
+	color: white;
+	font-size: 14px;
+	right: 20px;
+	margin-top: -50px;
+}
+
+/* Base icon link */
+#myicon-nav {
+	position: absolute;
+	top: 300px;
+}
+/* Icon link */
+.icon-nav {
+	width: 170px;
+	border: 2px solid white;
+	padding: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin-bottom: 20px;
+	left: -145px;
+	position: absolute;
+	transition: .4s;
+	text-shadow: 1px 1px 2px black;
+}
+.icon-nav:hover {
+	left: 0;
+}
+/* Link caption */
+.icon-nav a {
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+}
+/* Icon link */
+.icon-nav i {
+	font-size: 30px;
+	color: white;
+	position: absolute;
+	right: 10px;
+}
+#ig-icon:hover {
+	background-image: linear-gradient(to right, purple, red, yellow);
+}
+#gh-icon {
+	top: 70px;
+}
+#gh-icon:hover {
+	background-image: linear-gradient(to right, black, grey);
+}
+
+/*-------------------------------------------------- About --------------------------------------------------*/
+/* About page */
+#about {
+	padding: 10px 50px 50px 50px;
+	cursor: default;
+}
+
+/* Title about */
+.title-about h1{
+	font-family: Adobe Garamond Pro;
+	font-size: 50px;
+	color: #4E3620;
+	margin-left: 50px;
+	border-bottom: 2px solid black;
+	width: 200px;
+	padding-left: 20px;
+	text-shadow: 1px 1px 1px grey;
+	cursor: default;
+}
+
+/* Logo R */
+.logo-about {
+	position: absolute;
+	right: 100px;
+	margin-top: -125px;
+}
+.logo-about:hover {
+	animation: shake 0.5s;
+  	animation-iteration-count: infinite;
+}
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* Content caption about */
+.caption-about {
+	background-image: linear-gradient(90deg, #4E3620, black);
+	padding: 50px 20px;
+	box-shadow: 0px 5px 8px grey;
+	height: auto;
+	min-height: 360px;
+}
+/* Caption */
+.caption-about p {
+	color: #F8F4E1;
+	margin-bottom: -20px;
+	text-shadow: 1px 1px 1px black;
+}
+/* Name */
+.caption-about h1 {
+	font-family: Adobe Garamond Pro;
+	color: #897853;
+	font-size: 45px;
+	text-shadow: 1px 1px 2px black;
+	border-bottom: 2px solid #897853;
+	width: 450px;
+	margin-bottom: -10px;
+	margin-left: 30px;
+	transition: .3s;
+}
+.caption-about h1:hover {
+	transform: scale(1.07);
+}
+/* Info */
+.caption-about h2 {
+	color: white;
+	text-shadow: 1px 1px 2px black;
+	margin-left: 30px;
+}
+/* Description */
+.caption-about h5 {
+	color: #F8F4E1;
+	text-shadow: 1px 1px 1px black;
+	width: 45%;
+}
+
+/* Image about */
+.image-about img{
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	right: 10%;
+	margin-top: -430px;
+	filter: drop-shadow(1px 2px 5px black);
+}
+
+/* Border bottom */
+#about hr {
+	border: 2px solid black;
+	border-style: dashed;
+}
+
+
+/*-------------------------------------------------- Portfolio --------------------------------------------------*/
+#portfolio {
+	background-color: #4E3620;
+	width: 100%;
+	height: 660px;
+	padding-top: 10px;
+}
+
+/* Title portfolio */
+.title-portfolio h1{
+	font-family: Adobe Garamond Pro;
+	font-size: 50px;
+	color: #F8F4E1;
+	border-bottom: 2px solid white;
+	max-width: 500px;
+	width: auto;
+	text-shadow: 1px 1px 1px grey;
+	cursor: default;
+}
+
+
+/*-------------------------------------------------- Skill --------------------------------------------------*/
+#skill {
+	height: auto;
+	padding: 10px 100px 50px 100px;
+}
+/* Title skill */
+.title-skill h1{
+	font-family: Adobe Garamond Pro;
+	font-size: 50px;
+	color: #4E3620;
+	margin-left: 50px;
+	border-bottom: 2px solid black;
+	width: 300px;
+	padding-left: 20px;
+	text-shadow: 1px 1px 1px grey;
+	cursor: default;
+}
+
+/* Border */
+.outer-content {
+	max-width: 100%;
+	width: auto;
+	min-height: 470px;
+	height: auto;
+	padding: 10px;
+	border: 2px solid black;
+	border-style: dashed;
+}
+
+/* List skill */
+.outer-content li {
+	list-style-type: none;
+	float: left;
+	padding: 20px 34px;
+	text-align: center;
+}
+/* Background bottom */
+.bg-skill {
+	width: 300px;
+	height: 400px;
+	background-image: linear-gradient(to bottom right, grey, black);
+	border-radius: 20px;
+	box-shadow: 0px 15px 20px grey;
+}
+/* Backgrounf top */
+.bg-skill-in {
+	position: absolute;
+	z-index: 3;
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 100%;
+	height: 400px;
+	background-image: linear-gradient(to bottom right, #4E3620, black);
+	border-radius: 20px;
+	box-shadow: 0px 15px 20px black;
+	border-left: 2px solid white;
+	border-top: 2px solid white;
+	filter: brightness(.6);
+	transition: .4s;
+	text-align: center;
+	justify-content: center;
+}
+.bg-skill-in:hover, .bg-skill-in h3:hover {
+	transform: scale(1.04);
+	filter: brightness(1.0);
+	text-shadow: 1px 1px 5px grey;
+}
+
+/* Info skill */
+.bg-skill-in h3 {
+	color: whitesmoke;
+	font-size: 30px;
+	margin-top: 50px;
+	cursor: default;
+}
+
+/* Circle base */
+.myskill {
+	width: 200px;
+	height: 200px;
+	z-index: 3;
+	margin-left: 50px;
+	margin-top: 50px;
+	position: relative;
+}
+/* Circle outer */
+.outer {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	z-index: 3;
+	position: absolute;
+	margin-top: 1px;
+	margin-left: 1px;
+	box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, .15),
+				-6px -6px 10px -1px rgba(255, 255, 255, .7);
+}
+/* Circle inner */
+.inner {
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	z-index: 3;
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 20px;
+	box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 2),
+				inset -4px -4px 6px -1px rgba(255, 255, 255, .7),
+					  -.5px -.5px 0px rgba(255, 255, 255, 1),
+					  -.5px -.5px 0px rgba(0, 0, 0, .15),
+					  0px 12px 10px -10px rgba(0, 0, 0, .05);
+}
+/* Value persen */
+#number, #number2, #number3 {
+	color: white;
+	font-size: 30px;
+	margin-top: 65px;
+	text-shadow: 1px 1px 5px grey;
+	cursor: default;
+}
+/* Value circle */
+circle{
+	fill: none;
+	stroke: url(#GradientColor);
+	stroke-width: 20px;
+	stroke-dasharray: 565;
+	stroke-dashoffset: 565;
+	animation: anim 2s linear forwards;
+}
+@keyframes anim {
+	100% {
+		stroke-dashoffset: 226;
+	}
+}
+#circle1 {
+	display: none;
+}
+
+/* Value circle 2 */
+.cr2{
+	fill: none;
+	stroke: url(#GradientColor2);
+	stroke-width: 20px;
+	stroke-dasharray: 565;
+	stroke-dashoffset: 565;
+	animation: anim2 2s linear forwards;
+}
+@keyframes anim2 {
+	100% {
+		stroke-dashoffset: 197;
+	}
+}
+
+svg .cr22 {
+	display: none;
+}
+
+/* Value circle 3 */
+.cr3 {
+	fill: none;
+	stroke: url(#GradientColor3);
+	stroke-width: 20px;
+	stroke-dasharray: 565;
+	stroke-dashoffset: 565;
+	animation: anim3 2s linear forwards;
+}
+@keyframes anim3 {
+	100% {
+		stroke-dashoffset: 508;
+	}
+}
+
+#circle3 {
+	display: none;
+}
+svg {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+}
+
+.myskill2 {
+	display: none;
+}
+.myskill2 p {
+	font-weight: bold;
+}
+.myskill2 .container {
+  	width: 100%;
+  	background-color: #ddd;
+  	box-shadow: 1px 1px 5px black, inset 1px 1px 5px grey;
+  	border-radius: 10px;
+}
+
+.myskill2 .skills {
+	text-align: right;
+	padding: 10px 5px;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+}
+
+.html, .css, .js {
+	border-radius: 10px;
+}
+.myskill2 .html {
+	width: 60%; 
+	background-image: linear-gradient(to right, orange, orangered);
+}
+.myskill2 .css {
+	width: 65%; 
+	background-image: linear-gradient(to right, lightblue, blue);
+}
+.myskill2 .js {
+	width: 10%; 
+	background-image: linear-gradient(to right, yellow, orange);
+}
+
+/*-------------------------------------------------- Contact --------------------------------------------------*/
+#contact {
+	clear: left;
+	background-color: #202020;
+	height: auto;
+	padding: 20px 0px;
+	cursor: default;
+}
+
+/* Arrow to home page */
+.arrow {
+	color: lightgrey;
+	font-size: 30px;
+	cursor: pointer;
+	transition: .3s;
+}
+.arrow:hover {
+	color: white;
+}
+
+/* Media social icon */
+.icon-medsos {
+	margin-top: 40px;
+	padding-bottom: 30px;
+	width: 50%;
+	border-bottom: 2px solid grey;
+}
+.icon-medsos i .fab, .icon-medsos a {
+	color: white;
+	font-size: 30px;
+	padding: 10px;
+	transition: .3s;
+}
+.icon-medsos i:hover { transform: scale(1.2); }
+.icon-medsos .fa-whatsapp:hover { 
+	background: linear-gradient(45deg, green, lime);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+}
+.icon-medsos .fa-facebook-f:hover{ 
+	background: linear-gradient(45deg, darkblue, blue);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.icon-medsos .fa-instagram:hover{
+	background: linear-gradient(45deg, purple, orange);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.icon-medsos .fa-twitter:hover{ 
+	background: linear-gradient(45deg, blue, lightblue);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+}
+.icon-medsos .fa-youtube:hover, .fa-pinterest-p:hover{ 
+	background: linear-gradient(45deg, darkred, red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.icon-medsos .fa-github:hover{ 
+	background: linear-gradient(45deg, grey, lightgrey);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Copyright footer */
+.footer-copy p{
+	color: grey;
+	font-size: 20px;
+}
+
+
+
+/*------------------------------------------------- Responsive -------------------------------------------------*/
+
+@media screen and (max-width: 800px) {
+	.navbar {
+		display: none;
+	}
+	.mobile-nav {
+		display: block;
+		background-image: linear-gradient(90deg, #4E3620, black);
+		border-bottom: 1px solid grey;
+	}
+	.image-p {
+		margin-top: -550px;
+		margin-bottom: 20px;
+	}
+	.image-p img{
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		background-image: linear-gradient(45deg, black, #4E3620);
+		border: 2px solid #F8F4E1;
+        position: static;
+        box-shadow: -1px -2px 10px grey, 1px 2px 15px black;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.img-home {
+		background-position: center right;
+	}
+
+	/* -------------------------- Home -------------------------- */
+	.caption-p {
+		position: relative;
+		text-align: center;
+		left: 0px;
+		z-index: 4;
+		background-image: linear-gradient(black 80%, #F8F4E1);
+		padding: 20px 0px 100px 0px;
+		border-top-right-radius: 30px;
+		border-top-left-radius: 30px;
+		border-top: 2px solid white;
+	}
+	.caption-p p {
+		font-size: 18px;
+	}
+	.caption-p .hallo {
+		display: none;
+	}
+	.caption-p h1 {
+		font-size: 40px;
+		text-shadow: 1px 1px 2px black, -1px -1px 2px grey;
+	}
+	.caption-p h4 {
+		font-size: 22px;
+	}
+	.caption-p button {
+		font-size: 16px;
+		padding: 15px 30px;
+		border-radius: 30px;
+		margin-top: 20px;
+	}
+	.caption-p button:active { 
+		transform: none;
+		background-image: radial-gradient(#897853, #4E3620);
+	}
+	.copyright-h {
+		display: none;
+	}
+	#myicon-nav {
+		display: none;
+	}
+	/*.icon-nav {
+		width: 150px;
+		padding: 10px;
+		left: -130px;
+	}
+	.icon-nav a {
+		font-size: 20px;
+	}
+	.icon-nav i {
+		font-size: 25px;
+	}*/
+
+	/* -------------------------- About -------------------------- */
+	#about {
+		padding: 20px 10px 50px 10px;
+	}
+	/* Title about */
+	.title-about h1{
+		font-size: 40px;
+		margin-left: 20px;
+		border-bottom: 2px solid black;
+		width: 150px;
+		padding-left: 20px;
+	}
+	/* Logo R */
+	.logo-about {
+		display: none;
+	}
+
+	/* Content caption about */
+	.caption-about {
+		background-image: linear-gradient(90deg, #4E3620, black);
+		padding: 50px 20px;
+		border-radius: 20px;
+	}
+	/* Caption */
+	.caption-about p {
+		font-size: 15px;
+	}
+	/* Name */
+	.caption-about h1 {
+		text-shadow: -.5px -.5px .5px grey, 1px 1px 3px black;
+		font-size: 35px;
+		width: 90%;
+		margin-top: 40px;
+	}
+	/* Info */
+	.caption-about h2 {
+		font-size: 18px;	
+	}
+	/* Description */
+	.caption-about h5 {
+		font-size: 13px;
+		width: 80%;
+	}
+
+	/* Image about */
+	.image-about img{
+		display: none;
+	}
+
+	/* Border bottom */
+	#about hr {
+		border: 2px solid black;
+		border-style: dashed;
+	}
+
+	/* -------------------------- Portfolio -------------------------- */
+	#portfolio {
+		padding-top: 30px;
+	}
+
+	/* Title portfolio */
+	.title-portfolio h1{
+		font-size: 35px;
+		width: 90%;
+	}
+
+
+	/* -------------------------- Skill -------------------------- */
+	#skill {
+		height: auto;
+		padding: 30px 15px 50px 15px;
+	}
+	/* Title skill */
+	.title-skill h1{
+		font-size: 35px;
+		margin-left: 20px;
+		width: 200px;
+	}
+
+	/* Border */
+	.outer-content {
+		max-width: 100%;
+		width: auto;
+		min-height: 280px;	
+	}
+
+	/* List skill */
+	.outer-content li {
+		display: none;
+	}
+
+	.myskill2 {
+		display: block;
+	}
+	
+
+
+
+	#contact {
+		padding: 20px 0px;
+		cursor: default;
+		background-image: linear-gradient(#202020, black);
+	}
+
+	/* Media social icon */
+	.icon-medsos {
+		width: 90%;
+	}
+	.icon-medsos i .fab, .icon-medsos a {
+		font-size: 25px;
+		padding: 10px;
+	}
+	/* Copyright footer */
+	.footer-copy p{
+		font-size: 15px;
+	}
+
+
+
+
+}

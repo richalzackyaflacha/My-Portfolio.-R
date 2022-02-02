@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> 
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Fontawesome -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- AOS scroll -->
+		<link rel="stylesheet" type="text/css" href="CSS.css"> <!-- Link CSS -->
+		<link rel="icon" href="image/r.png">
+		<title>My Portfolio. R</title>
+	</head>
+
+	<body>
+		<!-- Navbar -->
+		<div class="navbar" id="navbar"> 
+			<!-- Logo portfolio -->
+			<div class="logo-navbar">
+				<a>My Portfolio. R</a>
+			</div>
+
+			<!-- Navbar -->
+			<div class="menu-navbar" id="menu-navbar">
+				<!-- Menu navbar -->
+     			<a href="#" class="btn active"><i class="fas fa-home"></i> Home</a>
+				<a href="#about" class="btn">About</a>
+				<a href="#portfolio" class="btn">Portfolio</a>
+				<a href="#skill" class="btn">Skill</a>
+				<a href="#contact" class="btn menu-end">Contact</a>
+			</div>
+		</div>
+
+
+		<div class="mobile-nav">
+			<div class="logo-navbar2">
+				<a>R</a>
+			</div>
+
+			<!-- Button to navbar mobile -->
+			<button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></button>
+
+			<!-- Navbar mobile -->
+			<div id="mySidepanel" class="sidepanel">
+				<div class="logo-mobile">
+					R
+				</div>
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+				<a href="#" class="btn2 active2" onclick="closeNav()">Home</a>
+				<a href="#about" class="btn2" onclick="closeNav()">About</a>
+				<a href="#portfolio" class="btn2" onclick="closeNav()">Portfolio</a>
+				<a href="#skill" class="btn2" onclick="closeNav()">My Skills</a>
+				<a href="#contact" class="btn2" onclick="closeNav()">Contact</a>
+			</div>
+		</div>
+
+
+		<!-- Home page -->
+		<div id="home">
+			<!-- Background image home -->
+			<div class="img-home"></div>
+			
+			<!-- Image profile -->
+			<div class="image-p" align="center">
+				<img src="image/ical1.png" data-aos="fade-up">
+			</div>
+
+			<!-- Caption home profile -->
+			<div class="caption-p" data-aos="fade-left">
+				<p class="hallo">Hallo...</p>
+				<p>Selamat Datang Di Portofolio</p>
+				<h1>Richal Zacky Aflacha</h1>
+				<h4>Selamat Berkunjung</h4>
+				<a href="#portfolio"><button>Lihat Portfolio</button></a>
+			</div>
+
+			<!-- Copyright -->
+			<div class="copyright-h" >
+				<p>&#169; My Portfolio. R 
+					<script>document.write(new Date().getFullYear())</script>
+				</p>
+			</div>
+
+			<!-- Icon to IG & GH -->
+			<div id="myicon-nav" data-aos="fade-right">
+				<div class="icon-nav" id="ig-icon">
+					<a href="https://www.instagram.com/richalzacky">
+						Instagram 
+					</a>
+					<i class="fab fa-instagram"></i>
+				</div>
+				<div class="icon-nav" id="gh-icon">
+					<a href="https://github.com/richalzackyaflacha">
+						GitHub 
+					</a>
+					<i class="fab fa-github"></i>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- About page -->
+		<div id="about">
+			<!-- Title about -->
+			<div class="title-about" data-aos="fade-right" data-aos-duration="2000">
+				<h1>About</h1>
+			</div>
+
+			<!-- Logo R -->
+			<div class="logo-about" data-aos="flip-left" data-aos-duration="2000">
+				<img src="image/r.png">
+			</div>
+
+			<!-- Caption about -->
+			<div class="caption-about">
+				<div data-aos="fade-right" data-aos-duration="2000">
+					<p>Assalamualaikum Wr. Wb.<br>Hallo... nama saya</p>
+					<h1>Richal Zacky Aflacha</h1>
+					<h2>Saya adalah seorang Front-end Developer &<br>Web Designer</h2>
+					<h5>
+						Lahir di Bogor, 04 Oktober 2005<br>
+						Berpendidikan di SMK Wikrama Bogor<br>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
+					</h5>
+				</div>
+			</div>
+
+			<!-- Image about page -->
+			<div class="image-about">
+				<img src="image/ical2.png" data-aos="zoom-in-up" data-aos-duration="1500">
+			</div>
+
+			<hr>
+		</div>
+
+		
+		<!-- Portfolio page -->
+		<div id="portfolio">
+			<!-- Title portfolio -->
+			<div class="title-portfolio" align="center" data-aos="zoom-in" data-aos-duration="2000">
+				<h1>Portfolio</h1>
+			</div>
+		</div>
+
+
+		<!-- Skill page -->
+		<div id="skill">
+			<!-- Title skill -->
+			<div class="title-skill" data-aos="fade-right" data-aos-duration="2000">
+				<h1>My Skills</h1>
+			</div>
+
+			<!-- Border dashed -->
+			<div class="outer-content">
+				<li>
+					<!-- Background bottom -->
+					<div class="bg-skill" data-aos="flip-left" data-aos-duration="2000" >
+						<!-- Background top -->
+						<div class="bg-skill-in"  align="center">
+							<!-- Base layer -->
+							<div class="myskill">
+								<!-- Circle outer -->
+								<div class="outer">
+									<!-- Circle inner -->
+									<div class="inner">
+										<!-- Value -->
+										<div id="number">
+											
+										</div>
+									</div>
+								</div>
+
+								<!-- Value circle -->
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+									<!-- Color circle -->
+                                    <defs>
+                                    	<!-- Gradient -->
+                                        <linearGradient id="GradientColor">
+                                        	<!-- Color -->
+                                            <stop offset="0%" stop-color="orangered" />
+                                        	<stop offset="100%" stop-color="orange" />
+                                        </linearGradient>
+        							</defs>
+        							<!-- Circle size -->
+        							<circle cx="100" cy="100" r="90" stroke-linecap="round" />
+        							<circle id="circle1" cx="75" cy="75" r="65" stroke-linecap="round" />
+								</svg>
+							</div>
+
+							<!-- Description -->
+							<h3>HTML</h3>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="bg-skill" data-aos="flip-left" data-aos-duration="2000" >
+						<div class="bg-skill-in" align="center">
+							<div class="myskill">
+								<div class="outer">
+									<div class="inner">
+										<div id="number2">
+											
+										</div>
+									</div>
+								</div>
+
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                                    <defs>
+                                        <linearGradient id="GradientColor2">
+                                            <stop offset="0%" stop-color="blue" />
+                                        	<stop offset="100%" stop-color="lightblue" />
+                                        </linearGradient>
+        							</defs>
+        							<circle cx="100" cy="100" r="90" stroke-linecap="round" / class="cr2">
+        							<circle class="cr22" cx="75" cy="75" r="65" stroke-linecap="round" />
+								</svg>
+							</div>
+
+							<h3>CSS</h3>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="bg-skill" data-aos="flip-left" data-aos-duration="2000" >
+						<div class="bg-skill-in" align="center">
+							<div class="myskill">
+								<div class="outer">
+									<div class="inner">
+										<div id="number3">
+											
+										</div>
+									</div>
+								</div>
+
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200px" height="200px">
+                                    <defs>
+                                        <linearGradient id="GradientColor3">
+                                            <stop offset="0%" stop-color="orange" />
+                                        	<stop offset="100%" stop-color="yellow" />
+                                        </linearGradient>
+        							</defs>
+        							<circle cx="100" cy="100" r="90" stroke-linecap="round" / class="cr3">
+        							<circle id="circle3" cx="75" cy="75" r="65" stroke-linecap="round" / >
+								</svg>
+							</div>
+
+							<h3>JavaScript</h3>
+						</div>
+					</div>
+				</li>
+
+				<div class="myskill2">
+					<p>HTML</p>
+					<div class="container">
+					  	<div class="skills html">60%</div>
+					</div>
+
+					<p>CSS</p>
+					<div class="container">
+					  	<div class="skills css">65%</div>
+					</div>
+
+					<p>JavaScript</p>
+					<div class="container">
+					  	<div class="skills js">10%</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Contact / footer page -->
+		<div id="contact" align="center">
+			<!-- Arrow scroll up -->
+			<a href="#" class="arrow"><i class="fas fa-caret-up"></i></a>
+			
+			<!-- Media social icon -->
+			<div class="icon-medsos" data-aos="zoom-in-down">
+				<a href="https://wa.me/0881024141438"><i class="fab fa-whatsapp"></i></a>
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.instagram.com/richalzacky"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.youtube.com/channel/UCYpN1z_35f_joMNOv1ounyw"><i class="fab fa-youtube"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="https://id.pinterest.com/richalzackyi/_saved/"><i class="fab fa-pinterest-p"></i></a>
+				<a href="https://github.com/richalzackyaflacha"><i class="fab fa-github"></i></a>
+			</div>
+
+			<!-- Logo R -->
+			<img src="image/r.png" data-aos="flip-left" data-aos-duration="2000">
+
+			<!-- Copyright -->
+			<div class="footer-copy">
+				<p>&#169; <script>document.write(new Date().getFullYear())</script> - My Portfolio. R by Richal</p>
+			</div>
+		</div>
+
+
+		<!-- Link JS -->
+		<script src="JS.js"></script>
+		<!-- Link JS AOS -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>AOS.init();</script>
+	</body>
+</html>
